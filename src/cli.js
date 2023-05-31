@@ -55,7 +55,12 @@ function processStuff(stuffPath, stuff, shouldValid) {
 }
 
 /**
+ * para rodar lib:
  * npm run cli -- --path ./arquivos/texto.md --should-valid
+ * 
+ * para habilitar autocomplete em libs nativas, caso não esteja funcionando:
+ * npm install --save-dev @types/node
+ * 
  */
 function init() {
     const args = yargs(hideBin(process.argv)).argv;
